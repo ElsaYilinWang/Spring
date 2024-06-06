@@ -8,7 +8,7 @@
 		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>Spring.GetStarted</groupId>
+	<groupId>com.example</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>GetStarted Spring Project</name>
@@ -31,10 +31,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.graalvm.buildtools</groupId>
-				<artifactId>native-maven-plugin</artifactId>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
