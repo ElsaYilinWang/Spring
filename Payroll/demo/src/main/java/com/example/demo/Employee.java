@@ -9,6 +9,8 @@ import jakarta.persistence.Id;
 
 
 @Entity
+// @Entity is a JPA annotation to make this object ready
+// for storage in a JPA-based data store.
 class Employee {
     private @Id
 
