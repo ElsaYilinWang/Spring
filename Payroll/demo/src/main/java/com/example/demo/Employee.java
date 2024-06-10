@@ -33,6 +33,10 @@ class Employee {
         return this.name;
     }
 
+    public String getRole() {
+        return this.role;
+    }
+
     public void setId(Long id){
         this.id = id;
     }
