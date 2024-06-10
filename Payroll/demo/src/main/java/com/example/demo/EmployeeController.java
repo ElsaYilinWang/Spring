@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+// Add new imports
+import org.springframework.hateoas.EntityModel;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
 @RestController
 class EmployeeController{
 
@@ -35,11 +39,21 @@ class EmployeeController{
 
     // Single item
 
-    @GetMapping("/employees/{id}")
-    Employee one(@PathVariable Long id){
+    // To make your controller more RESTful, 
+    // add links like the following to the existing one method
 
-        return repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
+    @GetMapping("/employees/{id}")
+    EntityModel<Employee> one(@PathVariable Long id){
+
+        Employee employee = repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
+
+        return EntityModel.of(employee, //
+            linkTo(methodOn(EmployeeController.class).one(id)).withSelfRel(),
+            linkTo(methodOn(EmployeeController.class).all()).withRel("employees")
+        );
     }
+
+    
 
     @PutMapping("/employees/{id}")
     Employee replacEmployee(@RequestBody Employee newEmployee, @PathVariable Long id){
