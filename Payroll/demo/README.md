@@ -24,3 +24,11 @@ Big picture: We are going to create a simple payroll service that manages the em
 Add Spring HATEOAS dependency to pom.xml
 
 - EmployeeModelAssembler.java
+
+
+## Evolving REST APIs
+
+REST is a collection of architectural constraints that, when adopted, make your application much more resilient. A key factor of resilience is that when you make upgrades to your services, your clients do not suffer downtime.
+
+SOAP-based services and CORBA-based services were incredibly brittle. It was hard to roll out a server that could support both old and new clients. With REST-based practices, it is much easier, especially using the Spring stack.
+
