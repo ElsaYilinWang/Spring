@@ -22,3 +22,5 @@ Big picture: We are going to create a simple payroll service that manages the em
 ## Module 2: Spring HATEOAS
 
 Add Spring HATEOAS dependency to pom.xml
+
+- EmployeeModelAssembler.java
