@@ -13,7 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.hateoas.CollectionModel;
 // Add new imports
 import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.IanaLinkRelations;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+// Add new imports for REST
+import org.springframework.http.ResponseEntity;
 
 @RestController
 class EmployeeController{
@@ -47,10 +52,15 @@ class EmployeeController{
    
 
     // end::get-aggregate-root
-
-    @PostMapping
-    Employee newEmployee(@RequestBody Employee newEmployee){
-        return repository.save(newEmployee);
+    // Update REST PostMapping method
+    @PostMapping("/employees")
+    ResponseEntity<?> newEmployee(@RequestBody Employee newEmployee){
+        
+        EntityModel<Employee> entityModel = assembler.toModel(repository.save(newEmployee));
+        
+        return ResponseEntity.created( //
+            entityModel.getRequiredLink(IanaLinkRelations.SELF).toUri()) //
+            .body(entityModel);
     }
 
     // Single item
