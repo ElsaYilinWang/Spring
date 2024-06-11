@@ -84,25 +84,32 @@ class EmployeeController{
     }
 
     
-
+    // Handling a PUT for different clients
     @PutMapping("/employees/{id}")
-    Employee replacEmployee(@RequestBody Employee newEmployee, @PathVariable Long id){
+    ResponseEntity<?> replacEmployee(@RequestBody Employee newEmployee, @PathVariable Long id){
         
-        return repository.findById(id).map(
-                        employee -> {employee.setName(newEmployee.getName());
-                                    employee.setRole(newEmployee.getRole());
-                                    return repository.save(employee);
-
-
-            }).orElseGet(() -> {
+        Employee updatedEmployee = repository.findById(id).map(
+                                employee -> {employee.setName(newEmployee.getName());
+                                            employee.setRole(newEmployee.getRole());
+                                            return repository.save(employee);}) //
+                                .orElseGet(() -> {
                 return repository.save(newEmployee);
             });
+
+        EntityModel<Employee> entityModel = assembler.toModel(updatedEmployee);
+
+        return ResponseEntity //
+            .created(entityModel.getRequiredLink(IanaLinkRelations.SELF).toUri())//
+            .body(entityModel);
         
     }
-
+    // Handling DELETE requests
     @DeleteMapping("/employees/{id}")
-    void deleteEmployee(@PathVariable Long id){
+    ResponseEntity<?> deleteEmployee(@PathVariable Long id){
+
         repository.deleteById(id);
+
+        return ResponseEntity.noContent().build();
     }
 
 }
