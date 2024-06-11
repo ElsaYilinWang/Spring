@@ -32,3 +32,4 @@ REST is a collection of architectural constraints that, when adopted, make your 
 
 SOAP-based services and CORBA-based services were incredibly brittle. It was hard to roll out a server that could support both old and new clients. With REST-based practices, it is much easier, especially using the Spring stack.
 
+ready for an upgrade that does not disturb existing clients while newer clients can take advantage of the enhancements.
