@@ -33,3 +33,12 @@ REST is a collection of architectural constraints that, when adopted, make your 
 SOAP-based services and CORBA-based services were incredibly brittle. It was hard to roll out a server that could support both old and new clients. With REST-based practices, it is much easier, especially using the Spring stack.
 
 ready for an upgrade that does not disturb existing clients while newer clients can take advantage of the enhancements.
+
+## Building links into your REST API
+
+To grow your API and better serve your clients, you need to embrace the concept of Hypermedia as the Engine of Application State.
+
+Business logic inevitably builds up rules that involve processes. The risk of such systems is we often carry such server-side logic into clients and build up strong coupling. REST is about breaking down such connections and minimizing such coupling.
+
+- Order.java
+- Status.java
