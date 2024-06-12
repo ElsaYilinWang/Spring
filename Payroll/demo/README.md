@@ -42,3 +42,32 @@ Business logic inevitably builds up rules that involve processes. The risk of su
 
 - Order.java
 - Status.java
+- OrderRepository.java
+- OrderController.java
+- OrderModelAssembler.java
+- OrderNotFoundException.java
+
+
+## Summary
+
+REST is not just about pretty URIs and returning JSON instead of XML.
+
+Instead, the following tactics help make your services less likely to break existing clients you may or may not control:
+
+- Do not remove old fields. Instead, support them.
+
+- Use rel-based links so clients need not hard code URIs.
+
+- Retain old links as long as possible. Even if you have to change the URI, keep the rels so that older clients have a path to the newer features.
+
+- Use links, not payload data, to instruct clients when various state-driving operations are available.
+
+This concludes our tutorial on how to build RESTful services using Spring. Each section of this tutorial is managed as a separate subproject in a single github repo:
+
+- nonrest — Simple Spring MVC app with no hypermedia
+
+- rest — Spring MVC + Spring HATEOAS app with HAL representations of each resource
+
+- evolution — REST app where a field is evolved but old data is retained for backward compatibility
+
+- links — REST app where conditional links are used to signal valid state changes to clients
