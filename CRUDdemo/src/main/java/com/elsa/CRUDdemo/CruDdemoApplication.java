@@ -20,7 +20,7 @@ public class CruDdemoApplication {
 		return runner -> {
 			//createStudent(studentDAO);
 			
-			//createMultipleStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 			
 			//readStudent(studentDAO);
 
@@ -32,7 +32,7 @@ public class CruDdemoApplication {
 
 			// deleteStudent(studentDAO);
 
-			deleteAllStudents(studentDAO);
+			// deleteAllStudents(studentDAO);
 		};
 	}
 
@@ -117,9 +117,9 @@ public class CruDdemoApplication {
 
 		// create multiple students
 		System.out.println("Creating 3 student objects ...");
-		Student tempStudent1 = new Student("John", "Doe", "john@luv2code.com");
-		Student tempStudent2 = new Student("Mary", "Public", "mary@luv2code.com");
-		Student tempStudent3 = new Student("Bonita", "Applebum", "bonita@luv2code.com");
+		Student tempStudent1 = new Student("Elsa", "Wang", "elsawang@gmail.com");
+		Student tempStudent2 = new Student("Daniel", "Tangaryan", "DanielTangaryan@gmail.com");
+		Student tempStudent3 = new Student("Olga", "Holland", "olgaholland@gmail.com");
 
 		// save the student objects
 		System.out.println("Saving the students ...");
