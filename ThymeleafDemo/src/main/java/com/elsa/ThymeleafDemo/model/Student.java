@@ -8,6 +8,9 @@ public class Student {
     // add a drop down list for countries
     private String country;
 
+    // radio button for languages
+    private String favouriteLanguage;
+
     public Student(){}
 
     public Student(String firstName, String lastName) {
@@ -37,5 +40,13 @@ public class Student {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getFavouriteLanguage() {
+        return favouriteLanguage;
+    }
+
+    public void setFavouriteLanguage(String favouriteLanguage) {
+        this.favouriteLanguage = favouriteLanguage;
     }
 }
