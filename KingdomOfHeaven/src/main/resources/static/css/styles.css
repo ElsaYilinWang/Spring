@@ -1,0 +1,195 @@
+.container {
+    display: grid;
+    background-color: #0F1035;  
+
+}
+
+.photo img {
+    margin-left: 35%;
+    margin-bottom: 5%;
+    padding: 5%;
+    width: 250%;
+    height: 100%;
+}
+
+
+#title {
+
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-top: 10%;
+    margin-left: 12%;
+    text-align: center;
+    
+}
+
+.imdb {
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+#brief {
+    background-color: #7FC7D9;
+    grid-column-start: span 2;
+    padding: 5%; 
+    
+}
+
+#cast {
+    
+    background-color: #DCF2F1;
+    grid-column-start: span 2;
+    padding-top: 3%;
+    
+}
+
+#cast img {
+    width: 30%;
+    border-radius: 50%;
+    margin-left: 35%;
+    padding-top: 5%;
+    
+}
+
+#cast p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+}
+
+#cast h3 {
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 1%;
+    margin: auto;
+
+}
+
+.img-heading{
+
+    grid-column-start: span 2;
+    grid-row: 1 / 2;
+
+}
+
+.img-heading img {
+    padding: auto;
+    width: 100%;
+}
+
+.background {
+    grid-column-start: span 2;
+    color: aliceblue;
+    text-align: justify;
+    text-decoration: dashed;
+    padding: 2%;
+    background-color: #365486;
+    
+}
+
+table {
+    margin: auto;
+    padding: auto;
+    width: 75%;
+    border-spacing: 20px;
+    border: 1px solid whitesmoke;
+}
+
+tr {
+    text-align: center;
+    font-weight: 800;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.intro {
+
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.characters {
+    color: aliceblue;
+    grid-row: 2 / 6;
+    grid-column: span 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.storyline p {
+    grid-column-start: span 2;
+    color: #0F1035;
+    text-align:justify;
+    text-decoration: dashed;
+    padding: 2%;
+    background-color: #7FC7D9;
+}
+
+
+footer {
+    color: aliceblue;
+    text-align: center;
+    grid-column-start: span 2;
+    padding: 2%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        background-color: white;
+        color: #0F1035;
+    }
+
+    p {
+        color: #0F1035;
+    }
+
+    #title {
+        background-color: white;
+        color: #0F1035;
+        
+    }
+
+    table {
+        color: #0F1035;
+    }
+
+    .photo img {
+        width: 300px;
+        height: 200px
+        
+    }
+
+    #brief {
+        background-color: white;
+    }
+
+    #cast {
+        background-color: white;
+    }
+    
+    .background {
+        color:#365486;
+        background-color: whitesmoke;
+    }
+    footer {
+        color: #0F1035;
+        background-color: white;
+    }
+    
+}
