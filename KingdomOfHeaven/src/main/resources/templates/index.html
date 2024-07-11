@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,9 @@
                 the valiant young man enters the retinue of the leprous King Baldwin IV (Edward Norton), 
                 which is rife with dissent led by the treacherous Guy de Lusignan (Marton Csokas), 
                 who wishes to wage war against the Muslims for his own political and personal gain.
-                <button><a href="plots.html">Learn More</a></button>
+                <button>
+                    <!-- Add a link to plots.html -->
+                    <a th:href="@{/plots}">Learn More</a></button>
             </p>
 
             <!--Here is a button to link plots.html-->
@@ -124,7 +126,7 @@
                 To learn more about the history background, please click here. 
 
                 <!--Here is a button to link history.html-->
-                <button><a href="history.html">Learn More</a></button>
+                <button><a th:href="@{/history}">Learn More</a></button>
 
             </p>
         </div>
