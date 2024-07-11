@@ -3,6 +3,7 @@ package com.elsa.AdvancedMapping.dao;
 import com.elsa.AdvancedMapping.entity.Course;
 import com.elsa.AdvancedMapping.entity.Instructor;
 import com.elsa.AdvancedMapping.entity.InstructorDetail;
+import com.elsa.AdvancedMapping.entity.Student;
 
 import java.util.List;
 
@@ -33,6 +34,10 @@ public interface AppDAO {
     void save(Course theCourse);
 
     Course findCourseAndReviewsByCourseId(int theId);
+
+    Course findCourseAndStudentsByCourseId(int theId);
+
+    Student findStudentAndCoursesByStudentId(int theId);
 }
 
 
