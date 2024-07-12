@@ -27,11 +27,14 @@ public class AoPdemoApplication {
 	private void demoTheBeforeAdvice(AccountDAO theAccountDAO, MembershipDAO theMembershipDAO) {
 
 		// call the business method
-		theAccountDAO.addAccount();
+		Account myAccount = new Account();
+		theAccountDAO.addAccount(myAccount, true);
+		theAccountDAO.dowork();
 
 
 		// call the business method again
 		theMembershipDAO.addSillyMember();
+		theMembershipDAO.goToSleep();
 
 	}
 

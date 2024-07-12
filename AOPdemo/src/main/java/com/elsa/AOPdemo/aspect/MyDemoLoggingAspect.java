@@ -13,7 +13,8 @@ public class MyDemoLoggingAspect {
     // let's start with an @Before advice
 
     // @Before("execution(public void addAccount()")
-    @Before("execution(* add*()") // optional modifier, any Return type, method like "addXXX()"
+    @Before("execution(* com.elsa.AOPdemo.dao.*.(..)")
+    // in the package, optional modifier, any Return type, any method, any params
     public void beforeAddAccountAdvice(){
 
         System.out.println("\n=====>>> Executing @Before advice on addAccount()");
