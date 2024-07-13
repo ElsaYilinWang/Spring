@@ -28,10 +28,22 @@ public class MyDemoLoggingAspect {
         long begin = System.currentTimeMillis();
 
         // now let's execute the method
-        Object result = theProceedingJoinPoint.proceed();
+        Object result = null;
+
+        try{
+            result = theProceedingJoinPoint.proceed();
+        }
+        catch(Exception exc){
+            // log the exception
+            System.out.println(exc.getMessage());
+
+            // rethrow exception
+            throw exc;
+        }
 
         // get end timestamp
         long end = System.currentTimeMillis();
+
 
         // compute duration and display it
         long duration = end - begin;
