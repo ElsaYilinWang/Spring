@@ -2,11 +2,16 @@ package com.elsa.AOPdemo.dao;
 
 import com.elsa.AOPdemo.Account;
 
+import java.util.List;
+
 public interface AccountDAO {
+
+    // add a new method
+    List<Account> findAccounts();
 
     void addAccount(Account theAccount, boolean vipFlag);
 
-    boolean dowork();
+    boolean doWork();
 
     public String getName();
 
@@ -15,4 +20,5 @@ public interface AccountDAO {
     public String getServiceCode();
 
     public void setServiceCode(String serviceCode);
+
 }

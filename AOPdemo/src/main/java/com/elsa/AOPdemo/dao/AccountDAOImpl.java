@@ -3,6 +3,9 @@ package com.elsa.AOPdemo.dao;
 import com.elsa.AOPdemo.Account;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Repository
 public class AccountDAOImpl implements AccountDAO{
 
@@ -10,19 +13,35 @@ public class AccountDAOImpl implements AccountDAO{
     private String serviceCode;
 
     @Override
-    public void addAccount(Account theAccount, boolean vipFlag) {
+    public List<Account> findAccounts() {
 
-        System.out.println(getClass() + ": DOING MY DB WORK: ADDING AN ACCOUNT");
+        List<Account> myAccounts = new ArrayList<>();
 
+        // create sample accounts
+        Account temp1 = new Account("John", "Silver");
+        Account temp2 = new Account("Elsa", "Wang");
+        Account temp3 = new Account("Luka", "Modric");
 
+        // add them to our accounts list
+        myAccounts.add(temp1);
+        myAccounts.add(temp2);
+        myAccounts.add(temp3);
+
+        return myAccounts;
     }
 
     @Override
-    public boolean dowork() {
+    public void addAccount(Account theAccount, boolean vipFlag) {
 
+        System.out.println(getClass() + ": DOING MY DB WORK: ADDING AN ACCOUNT");
+    }
+
+    @Override
+    public boolean doWork() {
         System.out.println(getClass() + ": doWork()");
         return false;
     }
+
 
     @Override
     public String getName() {
