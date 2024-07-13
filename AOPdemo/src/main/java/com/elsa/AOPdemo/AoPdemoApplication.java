@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.elsa.AOPdemo.service.TrafficFortuneService;
+
 import java.util.List;
 
 @SpringBootApplication
@@ -18,7 +20,9 @@ public class AoPdemoApplication {
 	
 	@Bean
 	public CommandLineRunner commandLineRunner(
-			AccountDAO theAccountDAO, MembershipDAO theMembershipDAO){
+			AccountDAO theAccountDAO,
+			MembershipDAO theMembershipDAO,
+			TrafficFortuneService theTrafficFortuneService){
 		
 		return runner -> {
 			
@@ -28,9 +32,26 @@ public class AoPdemoApplication {
 
 			// demoTheAfterThrowingAdvice(theAccountDAO);
 
-			demoTheAfterAdvice(theAccountDAO);
+			// demoTheAfterAdvice(theAccountDAO);
+
+			demoTheAroundAdvice(theTrafficFortuneService);
 		};
 	}
+
+	private void demoTheAroundAdvice(TrafficFortuneService theTrafficFortuneService) {
+
+		System.out.println("\nMain Program: demoTheAroundAdvice");
+
+		System.out.println("Calling getFortune()");
+
+		String data = theTrafficFortuneService.getFortune();
+
+		System.out.println("\nMy fortune is: " + data);
+
+		System.out.println("Finished");
+	}
+
+
 
 	private void demoTheAfterAdvice(AccountDAO theAccountDAO) {
 
