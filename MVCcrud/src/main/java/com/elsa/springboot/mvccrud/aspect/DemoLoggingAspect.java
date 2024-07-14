@@ -35,14 +35,14 @@ public class DemoLoggingAspect {
     public void before(JoinPoint theJoinPoint){
 
         // display method we are calling
-        String method = theJoinPoint.getSignature().toShortString();
+        String theMethod = theJoinPoint.getSignature().toShortString();
         myLogger.info("=====>> in @Before: calling method: " + theMethod);
 
         // display the arguments to the method
 
         // get the arguments
         Object[] args = theJoinPoint.getArgs();
-)
+
         // loop thru and display args
         for (Object tempArg : args) {
             myLogger.info("=====>> argument: " + tempArg);
