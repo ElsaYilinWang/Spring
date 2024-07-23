@@ -7,6 +7,6 @@ import org.springframework.data.mongodb.repository.Query;
 import java.util.Optional;
 
 public interface ExpenseRepository extends MongoRepository<Expense, String> {
-    @Query
+    @Query("{'name': ?0}")
     Optional<Expense> findByName(String name);
 }
