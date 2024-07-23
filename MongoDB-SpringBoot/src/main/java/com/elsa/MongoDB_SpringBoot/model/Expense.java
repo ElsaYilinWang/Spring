@@ -23,7 +23,7 @@ public class Expense {
     @Indexed(unique = true)
     private String expenseName;
     @Field("categpry")
-    private EnpenseCategpry expenseCategory;
+    private ExpenseCategory expenseCategory;
     @Field("amount")
     private BigDecimal expenseAmount;
 

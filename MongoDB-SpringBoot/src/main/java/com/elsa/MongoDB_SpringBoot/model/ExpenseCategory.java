@@ -1,5 +1,5 @@
 package com.elsa.MongoDB_SpringBoot.model;
 
-public enum EnpenseCategpry {
+public enum ExpenseCategory {
     ENTERTAINMENT, GROCERIES, RESTAURANT, UTILITIES, MISC
 }
