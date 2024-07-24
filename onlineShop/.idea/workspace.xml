@@ -5,46 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d2e7a9-028f-445a-94d5-be3f63ffdda5" name="Changes" comment="SpringBoot+Microservice: Product Service">
-      <change afterPath="$PROJECT_DIR$/.idea/OnlineShop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/elsa.OrderService/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/test/java/com/elsa/OrderService/OrderServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/OnlineShopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/dto/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/dto/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/com/elsa.ProductService/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/com/elsa/OnlineShop/OnlineShopApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/OnlineShopApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/dto/ProductRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/dto/ProductResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/repository/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/com/elsa/OnlineShop/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/test/java/com/elsa/OnlineShop/OnlineShopApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/java/com/elsa/DiscoveryServer/DiscoveryServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/elsa/OrderService/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/elsa/OrderService/dto/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/com/elsa/OrderService/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/com/elsa/OrderService/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,21 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Spring/OnlineShop/OrderService",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Spring/OnlineShop&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.elsa.onlineShop.dto" />

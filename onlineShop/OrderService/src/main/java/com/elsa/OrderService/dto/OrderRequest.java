@@ -1,6 +1,5 @@
 package com.elsa.OrderService.dto;
 
-import com.elsa.OrderService.model.OrderLineItems;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

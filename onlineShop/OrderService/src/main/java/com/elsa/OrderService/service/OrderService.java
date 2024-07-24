@@ -34,10 +34,11 @@ public class OrderService {
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
 
-        List<OrderLineItems> orderLineItemsList = orderRequest.getOrderLineItemsDtoList()
+        List<OrderLineItems> orderLineItems = orderRequest.getOrderLineItemsDtoList()
                 .stream()
                 .map(this::mapToDto)
                 .toList();
+
         order.setOrderLineItemsList(orderLineItems);
 
         List<String> skuCodes = order.getOrderLineItemsList()
@@ -49,7 +50,9 @@ public class OrderService {
         // and place order if in stock
         Observation inventoryServiceObservation = Observation.createNotStarted("inventory-service-lookup",
                 this.observationRegistry);
+
         inventoryServiceObservation.lowCardinalityKeyValue("call","InventoryService");
+
         return inventoryServiceObservation.observe(() ->{
             InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
                     .uri("http://InventoryService/api/inventory",
