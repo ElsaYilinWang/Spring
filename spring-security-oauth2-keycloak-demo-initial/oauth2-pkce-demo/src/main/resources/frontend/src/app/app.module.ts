@@ -10,7 +10,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    OAuthModule.forRoot({
+      resourceServer: {
+      allowedUrls: ['http://localhost:8080/api'],
+      sendAccessToken: true
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
