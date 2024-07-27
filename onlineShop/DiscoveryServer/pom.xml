@@ -63,6 +63,18 @@
 			<artifactId>micrometer-registry-prometheus</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Distributed Tracing -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-dependencies</artifactId>
+			<version>3.1.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+			<version>3.1.11</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
