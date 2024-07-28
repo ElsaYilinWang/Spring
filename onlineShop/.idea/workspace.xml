@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d2e7a9-028f-445a-94d5-be3f63ffdda5" name="Changes" comment="Eureka Client Setup">
-      <change afterPath="$PROJECT_DIR$/../spring-security-oauth2-keycloak-demo-initial/oauth2-pkce-demo/src/main/resources/frontend/src/app/app.service.ts" afterDir="false" />
+    <list default="true" id="78d2e7a9-028f-445a-94d5-be3f63ffdda5" name="Changes" comment="Spring Cloud Sleuth &amp; Zipkin application properties">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +58,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "last_opened_file_path": "D:/Spring/OnlineShop/OrderService",
+    "last_opened_file_path": "D:/Spring/spring-security-oauth2-keycloak-demo-initial",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -112,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721837016295</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Distributed Tracing: Spring Cloud Sleuth &amp; Zipkin dependency">
+      <option name="closed" value="true" />
+      <created>1722098307571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722098307571</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Spring Cloud Sleuth &amp; Zipkin application properties">
+      <option name="closed" value="true" />
+      <created>1722098780227</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722098780227</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,6 +141,8 @@
     <MESSAGE value="SpringBoot+Microservice: Product Service" />
     <MESSAGE value="Eureka Server Setup (w/ errors)" />
     <MESSAGE value="Eureka Client Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eureka Client Setup" />
+    <MESSAGE value="Distributed Tracing: Spring Cloud Sleuth &amp; Zipkin dependency" />
+    <MESSAGE value="Spring Cloud Sleuth &amp; Zipkin application properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Sleuth &amp; Zipkin application properties" />
   </component>
 </project>
