@@ -3,6 +3,7 @@ package com.elsa.OrderService.service;
 import com.elsa.OrderService.dto.InventoryResponse;
 import com.elsa.OrderService.dto.OrderLineItemsDto;
 import com.elsa.OrderService.dto.OrderRequest;
+import com.elsa.OrderService.event.OrderPlacedEvent;
 import com.elsa.OrderService.model.OrderLineItems;
 import com.elsa.OrderService.repository.OrderRepository;
 import io.micrometer.observation.Observation;
@@ -66,6 +67,7 @@ public class OrderService {
 
             if (allProductsInStock) {
                 orderRepository.save(order);
+                kafkaTemplate.send("notificiationTopic", new OrderPlacedEvent(order.getOrderNumber()));
                 //public Order Placed Event
                 applicationEventPublisher.publishEvent(new OrderPlacedEvent(this, order.getOrderNumber()));
                 return "Order Placed";
